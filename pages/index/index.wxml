@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<form bindsubmit="formSubmit">
+
+  <view class="section">
+    <view class="section__title">账户:</view> 
+    <view class='form-group'>  
+      <input class="input-text" type="text" bindtap="bindButtonTap" name="account"/>
+    </view>      
+  </view>
+
+  <view class="section">
+    <view class="section__title">金额:</view> 
+    <view class='form-group'> 
+      <input class="input-text" type="digit" bindtap="bindButtonTap" name="amount"/>
+    </view>
+  </view>
+<view class="section">
+  <button type="default" size="mini" form-type="submit">添加</button>
+  <button type="default" size="mini" form-type="submit">删除</button>
+  <button type="default" size="mini" form-type="reset">重置</button>
+</view>
+</form>
+
+<text>{{text}}</text>
+  
